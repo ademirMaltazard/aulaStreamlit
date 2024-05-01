@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas
 
+csv_violence = pandas.read_csv("https://raw.githubusercontent.com/natorjunior/pandas/main/Aula-02/microdados_violencia_reduzido.csv")
 st.write('## EXIBIÇÃO MICRODADOS SOBRE VIOLÊNCIA')
 
-csv_violence = pandas.read_csv("https://raw.githubusercontent.com/natorjunior/pandas/main/Aula-02/microdados_violencia_reduzido.csv")
-# df_violence = st.dataframe(csv_violence)
+st.write('Pagina para exbição de dados ultilizando filtro.')
+st.write('OBS: Esta página pode demorar a carregar um pouco.')
 
 uf = st.selectbox('selecione a UF:', csv_violence['id_uf_ocorrencia'].unique())
 button_fill = st.button('filtrar')
