@@ -10,3 +10,5 @@ st.markdown("# Tipos de graficos com plotly")
 
 st.plotly_chart(grafico)
 st.plotly_chart(grafico2)
+
+st.write("## Dieguin")
