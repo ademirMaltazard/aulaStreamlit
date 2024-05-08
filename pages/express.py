@@ -16,7 +16,7 @@ st.write("## mostrando o Dieguin")
 pagina1, pagina2 = st.tabs(["pagina1", "pagina2"])
 
 with pagina1:
-    st.image("../image/Dieguin.jpeg")
+    st.image(r"./image/Dieguin.jpeg", width=300)
 
 with pagina2:
     st.video("https://www.youtube.com/shorts/7J-zTyYaE8Y?feature=share")
