@@ -11,5 +11,12 @@ st.markdown("# Tipos de graficos com plotly")
 st.plotly_chart(grafico)
 st.plotly_chart(grafico2)
 
-st.write("## Dieguin")
-st.map()
+st.write("## mostrando o Dieguin")
+
+pagina1, pagina2 = st.tabs(["pagina1", "pagina2"])
+
+with pagina1:
+    st.image("../image/Dieguin.jpeg")
+
+with pagina2:
+    st.video("https://www.youtube.com/shorts/7J-zTyYaE8Y?feature=share")
